@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Lobby Digital 90s</title>
+<style>
+body{margin:0;background:#232323;font-family:Consolas,monospace;color:#eee;}
+#lobby{display:grid;grid-template-columns:repeat(20,6px);grid-template-rows:repeat(15,6px);gap:0;width:120px;height:90px;border:2px solid #444;background:#111;position:relative;margin:50px auto;}
+.cell{background:hsla(0,0%,0%,0);} .office{background:#5050b0;} .avatar{width:6px;height:6px;background:#ffcc00;border-radius:2px;}
+@keyframes walk{0%{transform:translateX(0);}25%{transform:translateX(6px);}50%{transform:translateX(12px);}75%{transform:translateX(18px);}100%{transform:translateX(24px);}}
+.route{position:absolute;background:#ff4444;height:6px;animation:walk 2s steps(4) forwards;}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;color:#eee;margin:0;">Lobby Retro 90s (pixel-art)</h1>
+<div id="lobby">
+  <div class="cell office" style="grid-column:7 / span 4;grid-row:5 / span 3;">Chatty</div>
+  <div class="cell avatar" style="grid-column:9;grid-row:8;"></div>
+  <div class="cell office" style="grid-column:14 / span 4;grid-row:5 / span 3;">Multi</div>
+  <div class="cell avatar" style="grid-column:16;grid-row:8;"></div>
+  <div class="cell office" style="grid-column:2 / span 4;grid-row:5 / span 3;">Pagy</div>
+  <div class="cell avatar" style="grid-column:4;grid-row:8;"></div>
+  <div class="cell office" style="grid-column:8 / span 4;grid-row:1 / span 3;">Jiménez</div>
+  <div class="cell avatar" style="grid-column:10;grid-row:4;"></div>
+</div>
+<div class="route" style="top:96px;left:70px;width:48px;"></div>
+</body>
+</html>
